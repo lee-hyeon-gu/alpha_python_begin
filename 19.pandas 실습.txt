@@ -1,0 +1,22 @@
+import pandas as pd
+
+pd.read_csv("concat_1.csv",sep=",")
+
+pd.read_csv("gapminder.tsv",sep='\t')
+
+f=open("test.txt",'wt')
+f.write("HI")
+f.close()
+
+f=open("test.txt",'rt') //read text
+data=f.read()
+f.close()
+data
+
+f=open("test.txt",'wt') //write text  ///한번 실행할때마다 새로운 메모장 생성
+f.write("HI")
+f.close()
+
+f=open("test.txt",'at') //attach text ///기존 메모장에 추가
+f.write("HI")
+f.close()
